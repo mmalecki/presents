@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Presents</title>
+    <link rel="stylesheet" href="/css/presents.css" />
+  </head>
+  <body>
+    <div id="presents-status" style="position:fixed; top:0px; bottom:0px"></div>
+    <div id="slides">
+      <div id="slide-0">
+        <h1>Hello world</h1>
+      </div>
+      <div id="slide-1">
+        <h1>Hello presents</h1>
+      </div>
+      <div id="slide-2">
+        <h1>Hello flatiron</h1>
+      </div>
+    </div>
+
+    <script src="/../../js/broadway-0.1.5.js"></script>
+    <script src="/../../js/inherits.js"></script>
+    <script src="/../../js/presents.js"></script>
+    <script src="/../../js/presents/plugins/controls.js"></script>
+    <script type="text/javascript">
+      var presents = new Presents();
+
+      presents.use(Controls);
+      presents.init();
+      presents.goTo(0);
+    </script>
+  </body>
+</html>
+

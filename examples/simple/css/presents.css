@@ -1,0 +1,12 @@
+html, body {
+  height: 100%;
+}
+
+#slides {
+  height: 100%;
+}
+
+#slides > div {
+  height: 100%;
+}
+
