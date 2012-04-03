@@ -1,7 +1,6 @@
 (function (exports) {
-  var Controls = exports.Controls = {};
-
-  var pageNumber = null;
+  var Controls = exports.Controls = {},
+      pageNumber = null;
 
   Controls.attach = function (options) {
     var self = this;
@@ -17,10 +16,10 @@
           pageNumber += c;
         }
       }
-      else if (c == "h" || c == "k") {
+      else if (c === "h" || c === "k") {
         self.previous();
       }
-      else if (c == "l" || c == "j") {
+      else if (c === "l" || c === "j") {
         self.next();
       }
       else if (c === ':') {
