@@ -1,6 +1,7 @@
 (function (exports) {
   var Presents = exports.Presents = function (options) {
-    this.currentSlide = 0;
+    var match = window.location.hash.match(/^#slide-(\d+)$/);
+    this.currentSlide = match ? parseInt(match[1], 10) : 0;
 
     App.call(this, options);
   };
